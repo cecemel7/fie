@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Facult&eacute; internationale d'esth&eacute;tique</title>
+    <meta name="Title" content="La Faculté Internationale d'Esthétique Pauline Le Brun"/>
+    <meta name="Subject" content="formation en esthétique"/>
+    <meta name="description" content="La Faculté Internationale d'Esthétique Le Brun Pauline vous propose la formation d'Esthétique et plusieurs spécialisations"/>
+    <meta name="keywords" content="formation, esthétique, soins, aromathérapie, massage, maquillage, réflexothérapie"/>
+    <meta name="Author" content="Pauline Le Brun"/>
+    <meta name="Identifier-URL" content="http://www.fie-esthetique.com"/>
+    <meta name="Revisit-after" content="2 days"/>
+    <meta name="Robots" content="all"/>
+
+    <!-- CSS
+================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-responsive.css">
+    <link rel="stylesheet" href="css/prettyPhoto.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/custom-styles2.css">
+
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<link rel="stylesheet" href="css/style-ie.css"/>
+<![endif]--> 
+
+    <!-- Favicons
+================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
+
+    <!-- JS
+================================================== -->
+    <script src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/jquery.prettyPhoto.js"></script>
+    <script src="js/jquery.flexslider.js"></script>
+    <script src="js/jquery.custom.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        $("#btn-blog-next").click(function () {
+          $('#blogCarousel').carousel('next')
+        });
+        $("#btn-blog-prev").click(function () {
+          $('#blogCarousel').carousel('prev')
+        });
+
+        $("#btn-client-next").click(function () {
+          $('#clientCarousel').carousel('next')
+        });
+        $("#btn-client-prev").click(function () {
+          $('#clientCarousel').carousel('prev')
+        });
+
+      });
+
+      $(window).load(function(){
+
+        $('.flexslider').flexslider({
+          animation: "slide",
+          slideshow: true,
+          start: function(slider){
+            $('body').removeClass('loading');
+          }
+        });  
+      });
+
+    </script>
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+                              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-57764684-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+
+  <body class="home">
+    <!-- Color Bars (above header)-->
+    <div class="color-bar-1"></div>
+    <div class="color-bar-2"></div>
+    <div class="contacts_header">
+      <div class="container">  
+        <a href="mailto:pauline.lebrun@hotmail.com">pauline.lebrun@hotmail.com</a>
+        <a href="tel:32 488242566">+32/(0)488 24 25 66 </a>
+        <a href="https://www.facebook.com/pages/Facult%C3%A9-Internationale-dEsth%C3%A9tique/300973800030503" target="_blank">
+          <img src="img/Logo_facebook_29.png" alt="Facebook">
+        </a>
+      </div>
+    </div>  
+
+    <header class="container"><!-- Begin Header -->
+
+      <div class="logo">
+        <a href="index.htm"><img src="img/piccolo-logo.png" alt="Facult&eacute; internationale d'esth&eacute;tique" /></a>
+      </div>
+      <div id="titre_site" class="row">
+        <h2>Faculté Internationale d'Esthétique</h2>
+      </div>
+
+      <!-- Main Navigation
+================================================== -->
+      <div class="row navigation">
+        <div class="navbar hidden-phone row">                     
+          <ul class="nav">
+            <li class="active"><a href="index.htm">Accueil</a></li>
+
+             <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Les formations<b class="caret"></b></a>
+              <ul class="dropdown-menu">
+               <li><a href="formations.htm">Aperçu des formations</a></li>
+                <li><a href="profession-esthetique.htm">Profession esthétique</a></li>
+                <li><a href="beauty-wellness.htm">Beauty and Wellness Expert</a></li>
+                <li><a href="global-beauty.htm">Global Beauty</a></li>
+                <li><a href="specialisations.htm">Spécialisations</a></li>
+                <li><a href="anglais.htm">Cours d'anglais : esthétique et marketing</a></li>                    
+              </ul>
+            </li>  
+
+
+            <li><a href="gestion-entreprise.htm">Gestion d'entreprise</a></li>
+
+            <li><a href="page-contact.htm">Contact</a></li>
+
+            <li ><a href="inscriptions.htm" class="lien_vert">Inscriptions </a></li>
+          </ul>
+        </div> <!-- navigation large -->
+
+        <!-- Mobile Nav
+================================================== -->
+        <form action="#" id="mobile-nav" class="visible-phone">
+          <div class="mobile-nav-select">
+            <select onchange="window.open(this.options[this.selectedIndex].value,'_top')">
+              <option value="">Menu</option>
+              <option value="index.htm">Accueil</option>
+              <option value="formations.htm">Les formations</option>
+              <option value="profession-esthetique.htm">- Profession esthétique</option>
+              <option value="beauty-wellness.htm">- Beauty and Wellness Expert</option>
+              <option value="global-beauty.htm">- Global Beauty</option>
+              <option value="specialisations.htm">- Spécialisations</option>
+              <option value="anglais.htm">- Cours d'anglais : esthétique et marketing</option>
+              <option value="gestion-entreprise.htm">Gestion d'entreprise</option>
+              <option value="page-contact.htm">Contact</option>
+              <option value="inscriptions.htm">Inscriptions</option>
+            </select>
+          </div>
+        </form>
+
+      </div> <!-- navigation -->
+    </header><!-- End Header -->
+
+    <div class="container"> <!-- container corps -->
+
+      <!-- Message inscriptions --> 
+      <div class="inscriptions">
+        <strong>La prochaine rentrée est prévue le jeudi 21 septembre 2017. Les inscriptions sont ouvertes.</strong>
+      </div>
+
+      <div class="row headline"><!-- Begin Headline -->
+
+        <!-- Slider Carousel
+================================================== -->
+        <div class="span8">
+          <div class="flexslider">
+            <ul class="slides">
+              <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-1.jpg" alt="slider" /></a></li>
+              <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-2.jpg" alt="slider" /></a></li>
+              <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-3.jpg" alt="slider" /></a></li>
+              <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-4.jpg" alt="slider" /></a></li>
+              <li><a href="gallery-single.htm"><img src="img/gallery/slider-img-5.jpg" alt="slider" /></a></li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Headline Text
+================================================== -->
+        <div class="span4">
+          <h2>Faites de la beauté votre métier</h2>
+
+          <p style="text-align:justify; font-size:15px;"><strong>Depuis plus de 70 ans</strong>, la Facult&eacute; Internationale d'Esth&eacute;tique a toujours eu pour objectif de r&eacute;pondre aux exigences de notre beau m&eacute;tier face &agrave; une soci&eacute;t&eacute; en perp&eacute;tuelle &eacute;volution. <br><br> <strong><a href="mailto:pauline.lebrun@hotmail.com">Pauline Le Brun </a></strong><br>
+            Directrice FIE <br> Membre du Jury INFA.</p>
+          <p style="text-align:justify; font-size:15px;"><img src="img/logo_INFA.png" alt="INFA"><img src="img/logo_UNEB.png" alt="UNEB"></p>
+        </div>
+      </div><!-- End Headline -->
+
+      <div class="row"><!-- Begin Bottom Section -->
+
+        <!-- Blog Preview
+================================================== -->
+        <div class="span6">
+          <h5 class="title-bg">À propos de F.I.E</h5>
+
+          <p style="text-align:justify;">Gr&acirc;ce &agrave; l'effort perp&eacute;tuel de l'Union Nationale des Esth&eacute;ticiennes de Belgique (UNEB) en la personne de sa Pr&eacute;sidente Nadine Salembier, le m&eacute;tier d' Esth&eacute;ticien/Esth&eacute;ticienne est reconnu et prot&eacute;g&eacute; l&eacute;galement depuis 1993.</p>
+
+          <p style="text-align:justify;">La Facult&eacute; Internationale d'Esth&eacute;tique est membre agr&eacute;&eacute; :</p>
+
+          <ul class="bulletlist">
+            <li style="text-align:justify;">de l'<strong>Union Nationale des Esth&eacute;ticiennes de Belgique (UNEB)</strong> qui délivre une attestation de conformité de l'aptitude professionnelle. Celle-ci est sanctionnée par un jury mandaté par la Fédération. <a href="http://www.uneb-nube.be/" target="_blank">http://www.uneb-nube.be/</a></li>
+            <li style="text-align:justify;">de la <strong>F&eacute;d&eacute;ration Internationale de l'Esth&eacute;tique-Cosm&eacute;tique (INFA)</strong> qui d&eacute;livre le Passeport International de l'Esth&eacute;tique. L'examen est sanctionn&eacute; par un jury international. <a href="http://www.infa.org/" target="_blank">http://www.infa.org/</a></li>
+          </ul>
+
+          <p style="text-align:justify;">A la fin de votre formation programm&eacute;e en une ann&eacute;e acad&eacute;mique en cours du jour ou du soir, la Facult&eacute; Internationale d'Esth&eacute;tique vous remettra un bagage de haut niveau pour vous lancer dans votre nouvelle vie active. En r&eacute;ussissant les examens de fin d'ann&eacute;e, vous pourrez obtenir les attestations suivantes:</p>
+
+          <ul class="bulletlist">
+            <li style="text-align:justify;">Le <strong>Certificat d'Aptitude Professionnel (CAP)</strong> décern&eacute; par la Facult&eacute; Internationale d'Esth&eacute;tique ;</li>
+            <li style="text-align:justify;">Le <strong>Certificat</strong> remis par le Jury Central de Bruxelles ;</li>
+            <li style="text-align:justify;">La <strong>Reconnaissance de l'Union Nationale des Esth&eacute;ticien(ne)s Belges</strong> (UNEB) ;</li>
+            <li style="text-align:justify;">Le <strong>Passeport international</strong> d&eacute;cern&eacute; par la F&eacute;d&eacute;ration Internationale de l'Esthétique - Cosmétique (INFA).</li>
+          </ul>
+
+        </div>
+
+        <!-- Client Area
+================================================== -->
+        <div class="span6">
+
+          <h5 class="title-bg">Pourquoi choisir
+            la F.I.E. ?
+            <button id="btn-client-next" class="btn btn-inverse btn-mini" type="button">&raquo;</button>
+            <button id="btn-client-prev" class="btn btn-inverse btn-mini" type="button">&laquo;</button>
+          </h5>
+
+          <!-- Client Testimonial Slider-->
+          <div id="clientCarousel" class="carousel slide no-margin">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+              <div class="active item">
+                <p class="quote-text">"Un enseignement de haute qualité. Un suivi personnalisé. Un programme constamment actualisé. Des ateliers et de conférences en collaboration avec l'Union Nationale des Esthéticiennes de Belgique (UNEB)."</p>
+              </div>
+
+              <div class="item">
+                <p class="quote-text">"Des visites chez des distributeurs de marques professionnelles. Un suivi continu dans les stages. Un appui post-académique en collaboration avec l'UCM (Union des Classes Moyennes) et d'autres organismes."</p>
+              </div>
+
+              <div class="item">
+                <p class="quote-text">"N'hésitez pas à contacter la Faculté Internationale d'Esthétique et je me ferai un plaisir de répondre à vos questions." - <cite>Pauline Le Brun
+                  Directrice F.I.E.</cite></p>
+              </div>
+
+              <div class="item">
+                <p class="quote-text">"Une école où l'on se sent comme chez soi, avec un professeur et une directrice passionnée et excellente, vous avez su transmettre avec passion votre savoir et nous intéresser à l'esthétique comme il se doit ! Merci pour tout." - <cite>Hassna M.</cite></p>
+              </div>       
+              
+              <div class="item">
+                <p class="quote-text">"Une approche pédagogique très efficace, des professeurs compétentes et totalement investies, et une conception de l'Esthétique qui allie rigueur, respect, professionnalisme et passion ! J'ai passé une excellente année de formation, j'en ressors confiante pour entamer mon nouveau métier et pleine d'envie de continuer à apprendre et à découvrir les nombreuses richesses du domaine de la beauté et du bien-être. Merci !" - <cite>Geneviève M.</cite></p>
+              </div>     
+              
+              <div class="item">
+                <p class="quote-text">"Mon année à la FIE fût fructueuse et passionnante, avec des cours très complets et enrichissants ! Mes deux professeurs, dont ma directrice, ont fait preuve de beaucoup de patience envers chacune d'entre-nous, elles nous ont poussées à donner le meilleur de nous-même jusqu'à la fin. Vous me manquerez beaucoup, la faculté mérite amplement sa grande renommée." - <cite>Virginie L.</cite></p>
+              </div>             
+            </div>
+          </div>
+
+          <br>
+
+          <!-- Contenu de la page Nos Marques -->
+          <h5 class="title-bg">Partenaires principaux</h5>
+          <div id="logoCarousel" class="carousel slide">
+            <!-- Carousel items -->
+            <div class="carousel-inner">
+
+              <div class="active item">
+                <img src="img/partenaires/LogoMariaGallandCarre.png" alt="logo Maria Galland">
+              </div>
+
+              <div class="item">
+                <img src="img/partenaires/LogoSultaneSaba.png" alt="logo Sultane de Saba">
+              </div>
+
+              <div class="item">
+                <img src="img/partenaires/LogoMUForeverBCarre.png" alt="logo MarkeUp Forever">
+              </div>
+
+              <div class="item">
+                <img src="img/partenaires/LogoProNailsCarre.png" alt="logo Pro Nails">
+              </div>      
+
+              <div class="item">
+                <img src="img/partenaires/LogoNewEstheticCarre.png" alt="logo New esthetic">
+              </div>    
+
+              <div class="item">
+                <img src="img/partenaires/logoperronrigot.png" alt="logo Perron Rigot">
+              </div>              
+            </div>
+            <!-- Carousel-inner -->
+            <a class="carousel-control left" href="#logoCarousel" data-slide="prev">&lsaquo;</a>
+            <a class="carousel-control right" href="#logoCarousel" data-slide="next">&rsaquo;</a>
+          </div>
+
+        </div>
+
+      </div><!-- End Bottom Section -->
+
+
+    </div> <!-- End Container corps -->
+
+
+    <!-- Footer Area
+================================================== -->
+
+    <footer>
+      <div class="container">
+
+        <a href="https://www.facebook.com/pages/Facult%C3%A9-Internationale-dEsth%C3%A9tique/300973800030503" target="_blank">
+          <img src="img/Logo_facebook_29.png" alt="Facebook"> 
+        </a>
+        <a href="mailto:pauline.lebrun@hotmail.com"> &nbsp; pauline.lebrun@hotmail.com</a> - 
+        <a href="tel:32 488242566">+32/(0)488 24 25 66 </a>
+        &nbsp; | &nbsp;
+        <span>&copy; 2017 FIE. All rights reserved</span>
+      </div> 
+
+      <div id="toTop" >Back to Top</div>
+
+    </footer><!-- End Footer -->
+
+  </body>
+</html>

@@ -1,0 +1,457 @@
+html, body {
+  font-size:14px;
+  line-height:18px;
+  min-height: 100%;
+}
+body {background: #f9f9f9 url(../img/page-bg-1.jpg);}
+
+.main-container {
+  height:auto; 
+  height: 100%;
+  min-height: 100%;
+}
+
+@media (max-width: 767px) {
+  body { padding-right: 0px; padding-left: 0px; }
+  .container {margin-right: 20px; margin-left: 20px;}
+}
+
+.bulletlist > li {
+  list-style-image:url(../img/puce.png);
+  margin-bottom:2px;
+}
+
+/* Déclarer la police "barkentina 1", pour les titres */
+@font-face {
+  font-family: 'barkentina_1regular';
+  src: url('fonts/barkentina_1-webfont.eot');
+  src: url('fonts/barkentina_1-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/barkentina_1-webfont.woff2') format('woff2'),
+    url('fonts/barkentina_1-webfont.woff') format('woff'),
+    url('fonts/barkentina_1-webfont.ttf') format('truetype'),
+    url('fonts/barkentina_1-webfont.otf') format('truetype'),
+    url('fonts/barkentina_1-webfont.svg#barkentina_1regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* Déclarer la police "FogtwoNo5", pour les menus */
+@font-face {
+  font-family: 'fogtwono5_regular';
+  src: 
+    url('fonts/FogtwoNo5.ttf') format('truetype'),
+    url('fonts/FogtwoNo5.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/***** Titles and Headings *****/
+
+h1, h2, h3, h4 , h5, h6 {
+  font-family: 'barkentina_1regular';
+  text-transform:uppercase; 
+  font-weight: bold;
+}	
+
+.space{
+  margin-top: 2rem;
+}
+
+h1.title-bg, h2.title-bg, h3.title-bg, h4.title-bg , h5.title-bg, h6.title-bg {
+  background:#f8f8f8; 
+  padding:10px 5px;
+  margin: 0px 0px 20px 0px;
+  border-bottom: 1px dotted #a9a9a9;
+  border-top: 1px dotted #a9a9a9;
+}
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {color:#7f7f7f;}
+h2 small {font-size: 30px;}
+h5 small {font-size: 14px;}
+h6 small {font-size: 12px;}
+
+h5.title-bg button {
+  float: right; 
+  text-transform: none;
+  margin-left:5px;
+}
+
+h5 {
+  font-size:15px;
+}
+h6 {
+  font-size:14px;
+}
+
+/***** Links *****/
+a, a:hover { color:#F91561; }
+
+a.lien_vert{ color:#447D00;}
+
+.navbar .nav > li > a.lien_vert{ 
+  color: #447D00;
+  border: 1px solid #447D00;
+  border-radius: 5px;
+}
+
+.navbar .nav > li > a.lien_vert:hover{ 
+  background-color: #dcf4bc;}
+
+/***** Misc *****/
+i {margin-right: 3px;}
+p {margin-bottom: 20px;}
+
+
+/**************************************
+/ Header
+**************************************/
+header.row {
+  margin-bottom:0;
+}
+/* Contacts & logo Facebook*/
+
+.contacts_header div{
+  text-align: right;
+  margin-bottom: 0;
+  padding-bottom: 4px;
+  border-bottom: 1px dotted silver;
+  background:rgba(255,255,255,.5)
+}
+.contacts_header a{
+  margin-left:2rem;
+}
+
+/* Logo et titre */
+
+#titre_site {
+  text-align: center;
+}
+#titre_site h2 {
+  text-transform: none;
+  font-weight: normal;
+  font-size: 36px;
+  margin-bottom:0;
+}
+
+.logo { margin:0px; text-align: center;}
+.headline { margin-bottom:20px; }
+.headline h2{ font-weight: normal; }
+
+/* Landscape phones and down */
+@media (max-width: 768px) {
+  .navigation {text-align: center;}
+   header.row { margin-bottom: 30px;}
+}
+
+.navigation { 
+  margin-top: 30px;
+  padding-bottom: 40px;
+}
+.navigation .navbar { 
+  text-align: center;
+  margin : 0 auto;
+
+  /*background:#f8f8f8;
+  border-bottom: 1px dotted #a9a9a9;
+  border-top: 1px dotted #a9a9a9;*/
+}
+.navbar .nav {
+  text-align: center;
+  width:100%;
+  display:table;
+}
+.navbar .nav > li {
+  float: none;
+  display: inline-block;
+  width:13%;
+  display:table-cell;
+}
+.navbar .nav > li > a { 
+  font-family: 'fogtwono5_regular';
+  font-weight: normal;
+  text-shadow: none; 
+  font-size: 18px;
+  color: #000;
+  /*padding: 10px 15px 10px;*/
+}
+
+/* Portrait tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+  .navbar .nav > li > a {padding: 10px 10px 10px;}
+}
+
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+  /*color:#FFF; 
+  background-color:#D1FC97;*/
+  box-shadow: none; 
+  background-color: transparent;
+  font-weight: bold;
+  color: #000;
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle,
+.navbar .nav li.dropdown.active > .dropdown-toggle,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle {
+  font-weight: bold;
+  color: #000;
+  background: none;
+}
+
+ul.nav li.dropdown:hover ul.dropdown-menu{ 
+  display: block; 
+}
+.dropdown-menu{
+  font-family: 'fogtwono5_regular';
+  padding: 0px;
+  margin: 0px;
+  background-color: #383838;
+  border: none;
+  border-radius: 0px;
+  box-shadow: none;
+  background-clip: none;
+  
+}
+.navbar .nav > li > .dropdown-menu:before {
+  border-right: 0px;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-bottom-color: none;
+}
+.dropdown-menu a {
+  color: #cccccc; 
+  border-bottom:1px solid #474747;
+  padding: 10px 10px;
+  margin:0px 10px;
+  font-weight:bold;
+}
+.dropdown-menu li > a:hover,
+.dropdown-menu li > a:focus,
+.dropdown-submenu:hover > a {
+  color: #f9f9f9;
+  text-decoration: none;
+  background-color: #383838;
+  background-image: none;
+  filter: none;
+}
+.navbar .nav li.dropdown.open > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.active > .dropdown-toggle .caret,
+.navbar .nav li.dropdown.open.active > .dropdown-toggle .caret {
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+}
+.navbar .nav > li > .dropdown-menu:before,
+.navbar .nav > li > .dropdown-menu:after {
+  display: none;
+}
+
+.navigation.row {
+  margin-bottom:0;
+  margin-left:0;
+}
+
+.inscriptions {
+  text-align:center;
+  border:1px dotted #447D00;
+  font-size:17px;
+  color:#447D00;
+  padding:10px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/**************************************
+/ Slider
+**************************************/
+.carousel-caption h4 { font-size: 14px; text-shadow:none; }
+.carousel-caption {background: url(../img/post-item-hover.png);}
+.carousel-control {border: none; }
+
+
+/**************************************
+/ Gallery
+**************************************/
+.gallery-title { margin-bottom:15px; }
+.gallery-item { margin-bottom:15px; margin-top:15px; }
+
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .gallery-post-grid {text-align: center}
+  .gallery {text-align: center; }
+}
+
+.gallery-post-grid {margin:0px;}
+.gallery-post-grid li {list-style: none; float: left; margin-bottom: 30px;}
+
+
+
+/**************************************
+/ Sidebar
+**************************************/
+.sidebar input{width: 80%;}
+.sidebar h5 {margin-top: 40px;}
+
+/* Mobile Portrait and Landscape Size */
+@media only screen and (max-width: 479px) {
+  iframe {width:270px;}
+}
+/* Tablet */
+@media (min-width: 768px) and (max-width: 979px) {
+  iframe {width:230px;}
+}
+/* Small Desktop Size */
+@media (min-width: 980px) and (max-width: 1199px) {
+  iframe {width:300px;}
+}
+
+
+/**************************************
+/ Footer
+**************************************/
+footer {
+  padding: 15px 0;
+  background:#333;
+  color:#fff;
+  clear: both;
+  text-align:center;
+}
+
+
+/**************************************
+/ MISC
+**************************************/
+.row {margin-bottom:40px;}
+.no-margin {margin-bottom:0px;}
+
+a.accordion-toggle{background: #f5f5f5;}
+.nav-tabs li.active a{background:#f8f8f8;}
+
+.left {float: left;}
+.right {float: right;}
+.align-left{float: left; margin: 0px 20px 20px 0px;}
+.align-right{float: right; margin: 0px 0px 20px 20px;}
+
+.color-bg { background:#a9a9a9; }
+.color { color:#D1FC97; }
+.color-bar-1, .color-bar-2 { width:100% }
+.color-bar-1 { background:#414141; height:5px; }
+.color-bar-2 { background:#D1FC97; height:3px; }
+.page-header { margin:0px }
+.lead {line-height:28px; margin: 20px 0px 30px 0px; }
+
+#toTop {
+  width:30px;
+  height:30px;
+  background:url(../img/back-top-btn2.png) no-repeat;
+  text-align:center;
+  position:fixed;
+  bottom:15px;
+  right:15px;
+  cursor:pointer;
+  display:none;
+  text-indent:-9999px;
+  z-index:12; 
+}
+
+
+/***** Testimonials *****/
+.quote-text { 
+  font-size:16px; 
+  line-height:24px; 
+  font-family:Georgia, "Times New Roman", Times, serif; 
+  font-style:italic;
+  margin:0px 20px; }
+.quote-text cite { 
+  font-size:12px; 
+  color:#999;
+  display:block;
+  margin-top:5px; }
+
+#clientCarousel.carousel .item {
+  background: #f9f9f9;
+  padding:20px 0px;
+  -webkit-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+  left: 0 !important;
+}
+#clientCarousel.carousel .next.left, .carousel .prev.right {
+  opacity: 1;
+  z-index: 1;
+}
+#clientCarousel.carousel .active.left, .carousel .active.right {
+  opacity: 0;
+  z-index: 2;
+}
+
+/***** Client Logos *****/
+
+
+#logoCarousel > div { width: 150px; margin:auto;}
+
+#logoCarousel .carousel-control {
+  opacity: 0.2;
+}
+
+#logoCarousel .carousel-control:hover {
+  opacity: 0.5;
+}
+
+/* page Inscription */
+.bloc_liste_image{
+  margin-left:0px;
+}
+.form-horizontal .control-label{
+  width:230px;
+}
+.form-horizontal .controls{
+  margin-left: 250px;
+}
+input{
+  width:230px;
+}
+@media (max-width: 480px) {
+ .form-horizontal .controls {
+    margin-left: 0;
+  }
+}
+
+/* Images dans les contenus */
+.img_droite{
+  float:right;
+  margin-left:10px;
+  border:none;
+}
+
+/* N° de tram & bus > Page "Contact" */
+.num_tram{
+  font-weight:bold;
+  padding:0 3px;
+}
+.num_tram a:link, .num_tram a:visited{
+  text-decoration:none;
+  color:#333;
+}
+#tram_25{
+  color:#FFF; 
+  background-color:#8E004D;	
+}
+#tram_25 a:link, #tram_25 a:visited{
+  color:#FFF; 
+}
+#tram_7{
+  background-color:#FFF06E;
+}
+#bus_36{
+  background-color:#84C8EB;
+}
+#metro_1{
+  background-color:#B92C92;
+}
+#metro_5{
+  background-color:#FED000;
+}
+
+
+
+
